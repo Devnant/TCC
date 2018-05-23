@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527084523976.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F74CCF07",
+    "lastKnownWriteTime" : 1527019402,
+    "last_content_update" : 1527019402,
+    "path" : "Z:/ROBERTO/R/TCC/EscalaLickert.R",
+    "project_path" : "EscalaLickert.R",
+    "properties" : {
+        "cursorPosition" : "106,55",
+        "scrollLine" : "85",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
