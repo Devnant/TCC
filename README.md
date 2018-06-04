@@ -25,6 +25,7 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 # Glossário
 
 - Fontes.RData -> bases de dados dos questionários conforme microdados extraídos do Inep (Saeb), escolas de Minas Gerais no exercício de 2015.
+- baseDIR.RData -> informações do questionário aplicado aos diretores das escolas.
 - baseESC.RData -> informações do questionário de escolas do quinto e nono anos do ensino fundamental, após eliminação de linhas com valores nulos, exclusão de escolas com menos de 30 participantes no exame, e exclusão de escolas com "máscara" (com ID que inicia com o dígito 6).
 - baseESCT.RData -> bases de dados de escolas após manipulação de dados, com as variáveis que serão de fato utilizadas na modelagem, em específico as dicotômicas construídas VCONSERV e VSEGUR.
 - baseESCT2.RData -> baseESCT.RData com a inclusão da variável projeto.
