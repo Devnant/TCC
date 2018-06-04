@@ -20,15 +20,17 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - VCONSERV: variável binária que indica a situação de conservação das escola sendo boa conservação (1) e (0) caso contrário. A definição de escola em bom estado de conservação foi feita a partir da avaliação de aspectos pesquisados conforme perguntas 7 a 21 e 37 a 64 do questionário de escolas (TS_ESCOLA) sendo considerado na escala de Lickert utilizada para a pontuação: bom, regular, ruim e inexistente, os respectivos valores 3, 2, 1, 0. A partir da soma dos pontos nos diversos aspectos foi dado um ponto de corte no terceiro quartil para indicar a escola em bom estado de conservação (1 - bom e 0 - ruim),  objetos esc5 e esc9 em baseESCT.RData;
 - VSEGUR: variável binária que indica a situação de segurança das escola sendo boa segurança (1) e (0) caso contrário. A definição de escola em bom estado de segurança foi feita a partir da avaliação de aspectos pesquisados conforme perguntas 22 a 31 do questionário de escolas (TS_ESCOLA) sendo considerado na escala de Lickert utilizada para a pontuação: bom, regular, ruim e inexistente, os respectivos valores 3, 2, 1, 0. A partir da soma dos pontos nos diversos aspectos foi dado um ponto de corte no terceiro quartil para indicar a escola em bom estado de segurança (1 - bom e 0 - ruim),  objetos esc5 e esc9 em baseESCT.RData;
 - PC_FORMACAO_DOCENTE: proporção de docentes na escola com formação adequada (0 a 100), assim considerados aqueles no Grupo 1 do INEP (docentes com formação superior de licenciatura, ou bacharelado com complementação pedagógica, na mesma área da disciplina que leciona),objetos esc5 e esc9 em baseESCT.RData; 
-- projeto: variável categórico que indica como foi desenvolvido o projeto pedagógico da escola, sendo (A) com participação da equipe escolar, (B) sem participação, o diretor não sabe, ou não há projeto (a ser elaborado com referência na coluna TX_RESP_Q032 de TS_DIRETOR em Fontes.RData).
+- projeto: variável categórico que indica como foi desenvolvido o projeto pedagógico da escola, sendo (A) com participação da equipe escolar, (B) sem participação, o diretor não sabe, ou não há projeto (coluna TX_RESP_Q032 de TS_DIRETOR em Fontes.RData).
 
 # Glossário
 
 - Fontes.RData -> bases de dados dos questionários conforme microdados extraídos do Inep (Saeb), escolas de Minas Gerais no exercício de 2015.
 - baseESC.RData -> informações do questionário de escolas do quinto e nono anos do ensino fundamental, após eliminação de linhas com valores nulos, exclusão de escolas com menos de 30 participantes no exame, e exclusão de escolas com "máscara" (com ID que inicia com o dígito 6).
 - baseESCT.RData -> bases de dados de escolas após manipulação de dados, com as variáveis que serão de fato utilizadas na modelagem, em específico as dicotômicas construídas VCONSERV e VSEGUR.
+- baseESCT2.RData -> baseESCT.RData com a inclusão da variável projeto.
 - EscalaLickert.R -> script elaborado para obtenção das variáveis VCONSERV e VSEGUR, resultando no arquivo baseESCT.RData.
 - GraficosEscolas.R -> script com várias visualizações feitas no arquivo baseESCT.RData (histogramas, boxplots, etc).
+- Projeto.R <- script elaborado para obtenção da variável projeto, resultando no arquivo baseESCT2.RData.
 
 # Procedimentos para revisão
 
