@@ -8,8 +8,8 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 ### nível de aluno:
 - sexo: masculino (A) ou feminino (B), coluna TX_RESP_Q001 de TS_ALUNO em Fontes.RData;
 - percep: branco (A), pardo (B), preto (C), amarelo (D), indígena (E), não sei (F), coluna TX_RESP_Q002 de TS_ALUNO em Fontes.RData;
-- desvidade: desvio da idade que o aluno possuía na ocasião da prova e a idade que ele deveria ter para cursar o ano, sendo idade de 10 anos no 5° ano, e idade de 14 anos no 9° ano (a ser elaborado com referência na coluna TX_RESP_Q004 de TS_ALUNO em Fontes.RData);
-- formpais: variável binária indicando se o pai ou mãe do aluno completaram o ensino superior (a ser elaborado com referência nas colunas TX_RESP_Q019 e TX_RESP_Q023 de TS_ALUNO em Fontes.RData);
+- desvidade: desvio da idade que o aluno possuía na ocasião da prova e a idade que ele deveria ter para cursar o ano, sendo idade de 10 anos no 5° ano, e idade de 14 anos no 9° ano (referência na coluna TX_RESP_Q004 de TS_ALUNO em Fontes.RData);
+- formpais: variável binária indicando se o pai ou mãe do aluno completaram o ensino superior (referência nas colunas TX_RESP_Q019 e TX_RESP_Q023 de TS_ALUNO em Fontes.RData);
 - incentivo: variável binária que indica se os pais incentivam o aluno a estudar, sendo sim (A) e não (B), coluna TX_RESP_Q027 de TS_ALUNO em Fontes.RData;
 - notalp: proficiência em Língua Portuguesa transformada na escala única do SAEB, com média = 250, desvio = 50;
 - notamt: proficiência do aluno em Matemática transformada na escala única do SAEB, com média = 250, desvio = 50. 
