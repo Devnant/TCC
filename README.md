@@ -5,13 +5,14 @@ Repositório para o TCC do Curso de Pós da Escola de Contas do TCEMG
 
 Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microdados/microdados_saeb_2015.zip)
 
-
 ### nível de aluno:
 - sexo: masculino (A) ou feminino (B), coluna TX_RESP_Q001 de TS_ALUNO em Fontes.RData;
 - percep: branco (A), pardo (B), preto (C), amarelo (D), indígena (E), não sei (F), coluna TX_RESP_Q002 de TS_ALUNO em Fontes.RData;
 - desvidade: desvio da idade que o aluno possuía na ocasião da prova e a idade que ele deveria ter para cursar o ano, sendo idade de 10 anos no 5° ano, e idade de 14 anos no 9° ano (a ser elaborado com referência na coluna TX_RESP_Q004 de TS_ALUNO em Fontes.RData);
 - formpais: variável binária indicando se o pai ou mãe do aluno completaram o ensino superior (a ser elaborado com referência nas colunas TX_RESP_Q019 e TX_RESP_Q023 de TS_ALUNO em Fontes.RData);
-- incentivo: variável binária que indica se os pais incentivam o aluno a estudar, sendo sim (A) e não (B), coluna TX_RESP_Q027 de TS_ALUNO em Fontes.RData. 
+- incentivo: variável binária que indica se os pais incentivam o aluno a estudar, sendo sim (A) e não (B), coluna TX_RESP_Q027 de TS_ALUNO em Fontes.RData;
+- notalp: proficiência em Língua Portuguesa transformada na escala única do SAEB, com média = 250, desvio = 50;
+- notamt: proficiência do aluno em Matemática transformada na escala única do SAEB, com média = 250, desvio = 50. 
 
 ### nível de escola:
 - LOC: código do IBGE de mesoregião da escola, objetos esc5 e esc9 em baseESCT.RData;
@@ -25,13 +26,16 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 # Glossário
 
 - Fontes.RData -> bases de dados dos questionários conforme microdados extraídos do Inep (Saeb), escolas de Minas Gerais no exercício de 2015.
+- baseALU.RData -> informações do questionário aplicado aos alunos das escolas.
+- baseCONS.RData -> bases de dados consolidadas para o quinto e nono anos do ensino fundamental.
 - baseDIR.RData -> informações do questionário aplicado aos diretores das escolas.
 - baseESC.RData -> informações do questionário de escolas do quinto e nono anos do ensino fundamental, após eliminação de linhas com valores nulos, exclusão de escolas com menos de 30 participantes no exame, e exclusão de escolas com "máscara" (com ID que inicia com o dígito 6).
 - baseESCT.RData -> bases de dados de escolas após manipulação de dados, com as variáveis que serão de fato utilizadas na modelagem, em específico as dicotômicas construídas VCONSERV e VSEGUR.
 - baseESCT2.RData -> baseESCT.RData com a inclusão da variável projeto.
-- EscalaLickert.R -> script elaborado para obtenção das variáveis VCONSERV e VSEGUR, resultando no arquivo baseESCT.RData.
+- 1 - EscalaLickert.R -> script elaborado para obtenção das variáveis VCONSERV e VSEGUR, resultando no arquivo baseESCT.RData.
+- 2 - Projeto.R <- script elaborado para obtenção da variável projeto, resultando no arquivo baseESCT2.RData.
+- 3 - Consolidação.R <- script elaborado para junção das variáveis no nível de escolas com o nível de alunos, resultando no arquivo baseCONS.RData.
 - GraficosEscolas.R -> script com várias visualizações feitas no arquivo baseESCT.RData (histogramas, boxplots, etc).
-- Projeto.R <- script elaborado para obtenção da variável projeto, resultando no arquivo baseESCT2.RData.
 
 # Procedimentos para revisão
 
