@@ -35,7 +35,8 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - 1 - EscalaLickert.R -> script elaborado para obtenção das variáveis VCONSERV e VSEGUR, resultando no arquivo baseESCT.RData.
 - 2 - Projeto.R <- script elaborado para obtenção da variável projeto, resultando no arquivo baseESCT2.RData.
 - 3 - Consolidação.R <- script elaborado para junção das variáveis no nível de escolas com o nível de alunos, resultando no arquivo baseCONS.RData.
-- GraficosEscolas.R -> script com várias visualizações feitas no arquivo baseESCT.RData (histogramas, boxplots, etc).
+- GráficosAlunos.R -> script com várias visualizações feitas no arquivo baseCONS.RData (histogramas, boxplots, etc).
+- GráficosEscolas.R -> script com várias visualizações feitas no arquivo baseESCT.RData (histogramas, boxplots, etc).
 
 # Procedimentos para revisão
 
