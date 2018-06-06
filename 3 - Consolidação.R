@@ -32,13 +32,13 @@ base_9EF<-TS_ALUNO_9EF_MG[c(6,36,37,39,54,58,62,29,33)]
 base_9EF<-na.omit(base_9EF)
 
 # Criar variável desvidade
-base_9EF$desvidade<-(ifelse(base_9EF$TX_RESP_Q004=="A",2015-2001,
-                     ifelse(base_9EF$TX_RESP_Q004=="B",2015-2000,
-                     ifelse(base_9EF$TX_RESP_Q004=="C",2015-1999,
-                     ifelse(base_9EF$TX_RESP_Q004=="D",2015-1998,
-                     ifelse(base_9EF$TX_RESP_Q004=="E",2015-1997,
-                     ifelse(base_9EF$TX_RESP_Q004=="F",2015-1996,
-                     ifelse(base_9EF$TX_RESP_Q004=="G",2015-1995,2015-1994))))))))
+base_9EF$desvidade<-(ifelse(base_9EF$TX_RESP_Q004=="A",2015-2001-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="B",2015-2000-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="C",2015-1999-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="D",2015-1998-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="E",2015-1997-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="F",2015-1996-14,
+                     ifelse(base_9EF$TX_RESP_Q004=="G",2015-1995-14,2015-1994-14))))))))
 
 # Criar variável formpais
 base_9EF$formpais<-ifelse(base_9EF$TX_RESP_Q019=="F"|base_9EF$TX_RESP_Q023=="F","A","B")
