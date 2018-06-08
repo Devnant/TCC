@@ -72,7 +72,7 @@ summary(model9)
 
 anova(model8,model9)
 
-model10<- lme(notalp~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_ADM+NIVELSOC+VCONSERV,
+model10<- lme(notalp~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_ADM+NIVELSOC+VCONSERV+PROJETO,
              data=base_5EF,
              method="ML",
              random=~1|ID_ESCOLA)
