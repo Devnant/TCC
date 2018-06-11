@@ -95,8 +95,8 @@ base_9EF<-cbind(base_9EF,VSEGUR)
 rm(VSEGUR)
 
 # Criação bases de dados de escola
-esc5<-cbind(ESCOLA_5EF[1:9],base_5EF[54:57])
-esc9<-cbind(ESCOLA_9EF[1:9],base_9EF[54:57])
+esc5<-cbind(ESCOLA_5EF[c(1:9,64)],base_5EF[54:57])
+esc9<-cbind(ESCOLA_9EF[c(1:9,64)],base_9EF[54:57])
 
 # Organizando fatores
 esc5$LOC<-factor(esc5$LOC)

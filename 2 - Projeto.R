@@ -34,10 +34,13 @@ esc9$NIVEL_SOCIO_ECONOMICO<-(ifelse(esc9$NIVEL_SOCIO_ECONOMICO=="Muito Baixo"|
                                     ifelse(esc9$NIVEL_SOCIO_ECONOMICO=="Medio Baixo"|
                                              esc9$NIVEL_SOCIO_ECONOMICO=="Medio"|
                                              esc9$NIVEL_SOCIO_ECONOMICO=="Medio Alto","Medio","Alto")))
-colnames(esc9)[6]<-"NIVELSOC"                            
+colnames(esc9)[6]<-"NIVELSOC"
+esc9$NIVELSOC<-factor(esc9$NIVELSOC)
+esc9$NIVELSOC<-factor(esc9$NIVELSOC,levels(esc9$NIVELSOC)[c(2,3,1)])
+
 esc5$PROJETO<-factor(esc5$PROJETO,labels=c("ComPart","SemPart"))
 esc5$PROJETO<-factor(esc5$PROJETO,levels(esc5$PROJETO)[c(2,1)])
-esc9$PROJETO<-factor(esc9$PROJETO)
+esc9$PROJETO<-factor(esc9$PROJETO,labels=c("ComPart","SemPart"))
 esc9$PROJETO<-factor(esc9$PROJETO,levels(esc9$PROJETO)[c(2,1)])
 
 rm(baseDIR)
