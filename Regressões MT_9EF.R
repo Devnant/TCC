@@ -105,3 +105,5 @@ model13<- lme(notamt~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_
 summary(model13)
 
 anova(model12,model13)
+
+bestMT_9EF<-model13

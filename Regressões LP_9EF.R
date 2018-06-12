@@ -121,3 +121,5 @@ model15<- lme(notalp~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_
 summary(model15)
 
 anova(model14,model15)
+
+bestLP_9EF<-model15
