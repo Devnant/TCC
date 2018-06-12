@@ -22,6 +22,7 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - VSEGUR: variável binária que indica a situação de segurança das escola sendo boa segurança (1) e (0) caso contrário. A definição de escola em bom estado de segurança foi feita a partir da avaliação de aspectos pesquisados conforme perguntas 22 a 31 do questionário de escolas (TS_ESCOLA) sendo considerado na escala de Lickert utilizada para a pontuação: bom, regular, ruim e inexistente, os respectivos valores 3, 2, 1, 0. A partir da soma dos pontos nos diversos aspectos foi dado um ponto de corte no terceiro quartil para indicar a escola em bom estado de segurança (1 - bom e 0 - ruim),  objetos esc5 e esc9 em baseESCT.RData;
 - PC_FORMACAO_DOCENTE: proporção de docentes na escola com formação adequada (0 a 100), assim considerados aqueles no Grupo 1 do INEP (docentes com formação superior de licenciatura, ou bacharelado com complementação pedagógica, na mesma área da disciplina que leciona),objetos esc5 e esc9 em baseESCT.RData; 
 - PROJETO: variável categórico que indica como foi desenvolvido o projeto pedagógico da escola, sendo (A) com participação da equipe escolar, (B) sem participação, o diretor não sabe, ou não há projeto (coluna TX_RESP_Q032 de TS_DIRETOR em Fontes.RData).
+- INVDIR: estimativa de média de investimento direto de educação na escola. O cálculo considera a estimativa do Inep de investimento direto por aluno no Brasil, multiplicado pelo número de matrículas dos respectivos anos de ensino (quinto e nono) de cada escola.
 
 # Glossário
 
@@ -37,6 +38,10 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - 3 - Consolidação.R <- script elaborado para junção das variáveis no nível de escolas com o nível de alunos, resultando no arquivo baseCONS.RData.
 - GráficosAlunos.R -> script com várias visualizações feitas no arquivo baseCONS.RData (histogramas, boxplots, etc).
 - GráficosEscolas.R -> script com várias visualizações feitas no arquivo baseESCT.RData (histogramas, boxplots, etc).
+- Regressões LP_5EF.R -> modelos estimados de regressão, língua portuguesa quinto ano.
+- Regressões LP_9EF.R -> modelos estimados de regressão, língua portuguesa nono ano.
+- Regressões MT_5EF.R -> modelos estimados de regressão, matemática quinto ano.
+- Regressões MT_9EF.R -> modelos estimados de regressão, matemática nono ano.
 
 # Procedimentos para revisão
 
