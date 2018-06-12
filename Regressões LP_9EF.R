@@ -114,4 +114,10 @@ summary(model14)
 
 anova(model13,model14)
 
+model15<- lme(notalp~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_ADM+PC_FORMACAO_DOCENTE_FIL+NIVELSOC+VCONSERV+INVDIR_9EF,
+              data=base_9EF,
+              method="ML",
+              random=~1+desvidade+sexo|ID_ESCOLA)
+summary(model15)
 
+anova(model14,model15)

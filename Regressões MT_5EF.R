@@ -89,3 +89,11 @@ model11<- lme(notamt~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_
 summary(model11)
 
 anova(model9,model11)
+
+model12<- lme(notamt~1+sexo+percep+incentivo+desvidade+formpais+LOC+DEPENDENCIA_ADM+NIVELSOC+VCONSERV+INVDIR_5EF,
+              data=base_5EF,
+              method="ML",
+              random=~1+sexo+desvidade|ID_ESCOLA)
+summary(model12)
+
+anova(model11,model12)
