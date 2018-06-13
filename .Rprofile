@@ -1,5 +1,4 @@
 require(dplyr,quietly=TRUE,warn.conflicts=FALSE)
-require(tidyr,quietly=TRUE)
 require(janitor,quietly=TRUE)
 require(ggplot2,quietly=TRUE)
 require(xlsx,quietly=TRUE)
