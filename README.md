@@ -33,6 +33,7 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - baseESC.RData -> informações do questionário de escolas do quinto e nono anos do ensino fundamental, após eliminação de linhas com valores nulos, exclusão de escolas com menos de 30 participantes no exame, e exclusão de escolas com "máscara" (com ID que inicia com o dígito 6).
 - baseESCT.RData -> bases de dados de escolas após manipulação de dados, com as variáveis que serão de fato utilizadas na modelagem, em específico as dicotômicas construídas VCONSERV e VSEGUR.
 - baseESCT2.RData -> baseESCT.RData com a inclusão da variável projeto.
+- best.RData -> melhores modelos estimados segundo critérios AIC, BIC e loglik.
 - 1 - EscalaLickert.R -> script elaborado para obtenção das variáveis VCONSERV e VSEGUR, resultando no arquivo baseESCT.RData.
 - 2 - Projeto.R <- script elaborado para obtenção da variável projeto, resultando no arquivo baseESCT2.RData.
 - 3 - Consolidação.R <- script elaborado para junção das variáveis no nível de escolas com o nível de alunos, resultando no arquivo baseCONS.RData.
@@ -42,6 +43,8 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 - Regressões LP_9EF.R -> modelos estimados de regressão, língua portuguesa nono ano.
 - Regressões MT_5EF.R -> modelos estimados de regressão, matemática quinto ano.
 - Regressões MT_9EF.R -> modelos estimados de regressão, matemática nono ano.
+- Rsquared.R -> Análise de resíduos (Q-Q) e cálculos de coeficiente de determinação para os melhores modelos estimados.
+
 
 # Procedimentos para revisão
 
