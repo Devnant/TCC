@@ -1,4 +1,4 @@
-load("./baseESCT.RData")
+load("./baseESCT2.RData")
 
 # Histogramas Notas Escolas
 
@@ -127,22 +127,22 @@ box9redemt<-ggplot(esc9,aes(x=DEPENDENCIA_ADM,y=MEDIA_9EF_MT))+
 
 # Boxplots Nivel Socioeconômico
 
-box5soclp<-ggplot(esc5,aes(x=NIVEL_SOCIO_ECONOMICO,y=MEDIA_5EF_LP))+
-  geom_boxplot(aes(colour=NIVEL_SOCIO_ECONOMICO))+
+box5soclp<-ggplot(esc5,aes(x=NIVELSOC,y=MEDIA_5EF_LP))+
+  geom_boxplot(aes(colour=NIVELSOC))+
   labs(x="Rede",y="Média das Notas do 5° Ano do Ensino Fundamental - Língua Portuguesa", color="Nível Socioeconômico")+
   theme_bw()
 
-box5socmt<-ggplot(esc5,aes(x=NIVEL_SOCIO_ECONOMICO,y=MEDIA_5EF_MT))+
-  geom_boxplot(aes(colour=NIVEL_SOCIO_ECONOMICO))+
+box5socmt<-ggplot(esc5,aes(x=NIVELSOC,y=MEDIA_5EF_MT))+
+  geom_boxplot(aes(colour=NIVELSOC))+
   labs(x="Rede",y="Média das Notas do 5° Ano do Ensino Fundamental - Matemática", color="Nível Socioeconômico")+
   theme_bw()
 
-box9soclp<-ggplot(esc9,aes(x=NIVEL_SOCIO_ECONOMICO,y=MEDIA_9EF_LP))+
-  geom_boxplot(aes(colour=NIVEL_SOCIO_ECONOMICO))+
+box9soclp<-ggplot(esc9,aes(x=NIVELSOC,y=MEDIA_9EF_LP))+
+  geom_boxplot(aes(colour=NIVELSOC))+
   labs(x="Rede",y="Média das Notas do 9° Ano do Ensino Fundamental - Língua Portuguesa", color="Nível Socioeconômico")+
   theme_bw()
 
-box9socmt<-ggplot(esc9,aes(x=NIVEL_SOCIO_ECONOMICO,y=MEDIA_9EF_MT))+
-  geom_boxplot(aes(colour=NIVEL_SOCIO_ECONOMICO))+
+box9socmt<-ggplot(esc9,aes(x=NIVELSOC,y=MEDIA_9EF_MT))+
+  geom_boxplot(aes(colour=NIVELSOC))+
   labs(x="Rede",y="Média das Notas do 9° Ano do Ensino Fundamental - Matemática", color="Nível Socioeconômico")+
   theme_bw()
