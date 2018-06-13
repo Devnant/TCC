@@ -48,6 +48,6 @@ Fonte de dados -> microdados do Saeb do INEP (http://download.inep.gov.br/microd
 
 # Procedimentos para revisão
 
-1) Necessário instalação de R (https://cran.r-project.org/) e R Studio (https://www.rstudio.com/);
+1) Necessário instalação de últimas versões do R (https://cran.r-project.org/) e R Studio (https://www.rstudio.com/);
 2) abrir no R Studio o arquivo TCC.Rproj após clonagem/download do presente repositório;
 3) necessário importação dos pacotes para execução dos scripts, em especial visualização dos dados, listados no arquivo .Rprofile.
